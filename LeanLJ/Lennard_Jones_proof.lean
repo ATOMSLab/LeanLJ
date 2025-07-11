@@ -36,6 +36,12 @@ lemma scale_continuous (ε σ : ℝ) :
       · exact continuous_id.continuousOn
       · exact fun x a => Ne.symm (ne_of_lt a)
 
+theorem Lj_eq (r r_c ε σ : ℝ) : Ljp r r_c ε σ = LJ r r_c ε σ := by
+  unfold Ljp
+  unfold LJ
+  simp
+  ring_nf
+
 theorem cutoff_behavior (r r_c ε σ : ℝ)
     (h : r > r_c) : lj_Real r r_c ε σ = 0 := by
   unfold lj_Real

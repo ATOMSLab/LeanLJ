@@ -60,6 +60,20 @@ noncomputable def lj_Real  (r r_c ε σ  : ℝ) : ℝ :=
   else
     0
 
+noncomputable def Ljp  (r r_c ε σ  : ℝ) : ℝ :=
+  if r ≤ r_c then
+    let r6 := (σ / r) ^ 6
+    let r12 := r6 ^ 2
+    4 * ε * (r12 - r6)
+  else
+    0
+
+noncomputable def LJ (r r_c ε σ  : ℝ) : ℝ :=
+  if r ≤ r_c then
+    4 * ε * ((σ / r) ^ 12 - (σ / r) ^ 6)
+  else
+    0
+
 def lj_Float (r r_c ε σ : Float) : Float :=
     if r ≤ r_c then
       let r3 := (σ / r) ^ (3 : Nat)

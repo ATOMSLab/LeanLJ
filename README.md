@@ -5,6 +5,8 @@ It is built using the Lean 4 programming language and theorem prover. LeanLJ aim
 calculation and simulation step is grounded in proven mathematics. Our vision is to help scientists and researchers run simulations 
 they can fully trust, knowing that each part has been rigorously checked for correctness.
 
+The link to access the manuscript on arXiv is here: https://arxiv.org/abs/2505.09095.
+
 ## Goals of LeanLJ
 + ***Mathematically Verified Simulations:*** LeanLJ’s eventual goal is on verifying every calculation involved in MD simulations, including foundational
 equations like Newton's laws of motion and energy conservation. Unlike conventional simulations, which rely on humans to check correctness, we can formalize these
